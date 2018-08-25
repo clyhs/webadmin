@@ -18,4 +18,10 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function testDatabase(){
+        $this->assertDatabaseHas('users',[
+            'email' => '11111@gmail.com'
+        ]);
+    }
 }
