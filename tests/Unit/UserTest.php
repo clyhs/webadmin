@@ -17,4 +17,12 @@ class UserTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function testDatabase(){
+        $this->assertDatabaseHas('users',[
+            'email' => 'F0264wvm2Z@gmail.com'
+        ]);
+
+        $users=factory(App\User::class,3)->make();
+    }
 }
