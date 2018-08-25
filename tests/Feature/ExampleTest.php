@@ -21,7 +21,7 @@ class ExampleTest extends TestCase
 
     public function testDatabase(){
         $this->assertDatabaseHas('users',[
-            'email' => '11111@gmail.com'
+            'email' => 'F0264wvm2Z@gmail.com'
         ]);
     }
 }
